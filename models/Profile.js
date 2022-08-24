@@ -26,12 +26,17 @@ const ProfileSchema = new Schema ({
     type: String,
     required: true
   },
+  skills:{
+    type: [String],
+    required: true
+  },
   speciality: {
     type: [String]
   },
   bio: {
     type: String
   },
+ 
   interests: {
     type: [String]
   },
