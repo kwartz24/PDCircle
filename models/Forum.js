@@ -7,12 +7,25 @@ const ForumSchema = new Schema({
         type: String,
         required: true
     },
-    date:{
+    date_created:{
         type: Date,
         default: Date.now
     },
     avatar: {
         type: String
+    },
+    title: {
+        type: String
+    },
+    user_id: {
+        type: Int32Array
+    },
+    description: {
+        type: String
+    },
+    update_time: {
+        type: Date,
+        default: Date.now
     }
     //groups size, acitve users 
 
