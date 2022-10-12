@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 
 // Load Validation
-
 const validateProfileInput = require('../../validation/profile');
 
 //Load Profile Model
@@ -55,10 +54,6 @@ router.get('/all', (req, res) => {
 })
 .catch(err => res.status(404).json({ profile: 'There are no profile'}));
 });
-
-
-
-
 // @route GET api/profile/handle/:handle
 // @desc GET profile by handle
 // @access Public
