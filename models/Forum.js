@@ -26,6 +26,9 @@ const ForumSchema = new Schema({
     update_time: {
         type: Date,
         default: Date.now
+    },
+    members: {
+        type: [Schema.Types.ObjectId],
     }
     //groups size, acitve users 
 
